@@ -41,9 +41,32 @@ function appendCat(name){
     ];
     return newCats;
 }
-
 //calling function for test purposes
-test1 = appendCat("Gato")
+//test1 = appendCat("Gato");
 
 //Display array values in console for testing purposes
-console.log(test1);
+//console.log(test1);
+
+//trim the fat from previous test method
+//console.log(appendCat("cat4"));
+
+function prependCat(name){
+    const newCats = cats.slice()
+    newCats.unshift(name);
+
+    return newCats;
+}
+//test the prependCat function
+//console.log(prependCat("testCat"));
+
+function removeLastCat(){
+    const copyCat = [...cats];
+    copyCat.pop();
+    return copyCat;
+}
+
+function removeFirstCat(){
+    const copyCat = [...cats];
+    copyCat.shift();
+    return copyCat;
+}
